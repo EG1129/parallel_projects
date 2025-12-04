@@ -1,5 +1,7 @@
 SEE "ISSUES" FOR OUTPUT SCREENSHOTS
 
+To run MPI password cracker set up Visual Studio for MPI and run with however many cores you wish. For CUDA, set up CUDA Runtime on visual studio and run. No extra libraries required.
+
 Set of projects designed for CMPT 471-Parallel computing using CUDA and MPi to improve performance
 
 includes:
