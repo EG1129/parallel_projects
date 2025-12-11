@@ -38,13 +38,13 @@ int main()
 
     auto start = chrono::high_resolution_clock::now();
 
-    for (int i = 0; i < r; i++)          
+    for (int i = 0; i < r; i++)
     {
-        for (int j = 0; j < c1; j++)     
+        for (int j = 0; j < c1; j++)
         {
             double sum = 0.0;
 
-            for (int t = 0; t < c; t++)  
+            for (int t = 0; t < c; t++)
             {
                 int A_index = i * c + t;      // A[i][t]
                 int B_index = t * c1 + j;     // B[t][j]
@@ -58,10 +58,21 @@ int main()
     auto end = chrono::high_resolution_clock::now();
     chrono::duration<double, milli> duration = end - start;
 
+    /*cout << "Result matrix C (" << r << " x " << c1 << "):\n";
+    for (int i = 0; i < r; ++i)
+    {
+        for (int j = 0; j < c1; ++j)
+        {
+            cout << C[i * c1 + j] << " ";
+        }
+        cout << "\n";
+    }*/
+
     cout << "\nSerial multiplication took " << duration.count() << " ms" << endl;
 
     return 0;
 }
+
 
 
 
