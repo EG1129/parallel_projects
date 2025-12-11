@@ -17,12 +17,6 @@ int main()
     cout << "Enter rows and columns of matrix B (k2 n): ";
     cin >> k2 >> n;
 
-    if (k != k2)
-    {
-        cerr << "Inner dimensions must match (A: m x k, B: k x n)." << endl;
-        return 1;
-    }
-
     vector<double> A(m * k);
     vector<double> B(k * n);
     vector<double> C(m * n);
@@ -63,4 +57,5 @@ int main()
 
     return 0;
 }
+
 
